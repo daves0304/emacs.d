@@ -56,7 +56,7 @@
 (require 'init-frame-hooks)
 (require 'init-xterm)
 (require 'init-themes)
-(require 'init-osx-keys)
+;;(require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-dired)
 (require 'init-isearch)
@@ -90,7 +90,7 @@
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
-(require 'init-erlang)
+;;(require 'init-erlang)
 (require 'init-javascript)
 (require 'init-php)
 (require 'init-org)
@@ -100,7 +100,7 @@
 (require 'init-haml)
 (require 'init-http)
 (require 'init-python)
-(require 'init-haskell)
+;;(require 'init-haskell)
 (require 'init-elm)
 (require 'init-purescript)
 (require 'init-ruby)
@@ -110,7 +110,7 @@
 (require 'init-toml)
 (require 'init-yaml)
 (require 'init-docker)
-(require 'init-terraform)
+;;(require 'init-terraform)
 ;;(require 'init-nix)
 (maybe-require-package 'nginx-mode)
 
@@ -148,6 +148,9 @@
   (setq-default uptimes-keep-count 200)
   (add-hook 'after-init-hook (lambda () (require 'uptimes))))
 
+(require-package 'evil)
+(require 'evil)
+(evil-mode 1)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
